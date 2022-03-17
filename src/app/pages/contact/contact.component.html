@@ -1,0 +1,49 @@
+<div id="wrapper" class="fade-in">
+  <span class="bg"></span>
+
+  <navBar></navBar>
+
+  <!-- Main -->
+  <div id="main">
+      <div class="container">
+        <div class="contact">
+          <form>
+            <h2>Contactez-nous</h2>
+            <div style="border-bottom: 1px solid #233775;"></div>
+            <div class="corps-formulaire">
+              <div class="gauche">
+                <div class="groupe">
+                  <div class="label">
+                    <i class="fas fa-envelope"></i>
+                    <label>Objet</label>
+                  </div>
+                  <input type="text" autocomplete="off" [formControl]="object" />
+                </div>
+              </div>
+      
+              <div class="droite">
+                <div class="groupe">
+                  <div class="label">
+                    <label>Message</label>
+                  </div>
+                  <textarea placeholder="Saisissez ici..."  [formControl]="message" ></textarea>
+                </div>
+              </div>
+            </div>
+      
+            <div class="pied-formulaire" align="center">
+              <button (click)="onSubmit()">Envoyer le message</button>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <a style="text-decoration: none;outline: none;border: none;" href="https://www.google.com/maps/place/Ass+Societe+Musicale+de+Vichy/@46.1241014,3.425152,17z/data=!3m1!4b1!4m5!3m4!1s0x47f6cd0672f0d8e3:0x6e0cdc0a85353476!8m2!3d46.1240016!4d3.4273053">
+            <img src="images/map.jpg" class="map">
+          </a>
+        </div>
+
+    </div>    
+  </div>
+  <footerBar></footerBar>
+</div>

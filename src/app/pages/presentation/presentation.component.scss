@@ -1,0 +1,29 @@
+.image-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-items: center;
+}
+
+.image-container .image {
+  & img {
+    border-radius: 50%;
+    height: 15vw;
+    width: 15vw;
+  }
+}
+
+.valeurs {
+  background-color: rgba(#233775, 0.8);
+  color: #FFF;
+}
+
+.icons img {
+  display: flex;
+}
+
+.icons {
+  align-items: center;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 150px 70px;
+}

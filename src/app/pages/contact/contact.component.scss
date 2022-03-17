@@ -1,0 +1,33 @@
+.map {
+  columns: 2;
+  width: 100%;
+  margin-top: 80px;
+  border-radius: 25px;
+  border: 1px solid #233775;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-column-gap: 5%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.groupe {
+  display: grid;
+}
+
+.label {
+  margin-top: 10px;
+  display: inline-flex;
+
+  & i {
+    padding-right: 10px;
+  }
+}
+
+.droite {
+  padding-bottom: 10px;
+}
