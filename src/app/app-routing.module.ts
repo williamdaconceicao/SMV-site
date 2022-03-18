@@ -24,7 +24,12 @@ const routes: Routes = [
     component: PresentationComponent
   },
   {
-      path: '*',
+      path: '',
+      pathMatch: 'full',
+      redirectTo: 'home'
+  },
+  {
+      path: '**',
       redirectTo: 'home'
   }
 ];
