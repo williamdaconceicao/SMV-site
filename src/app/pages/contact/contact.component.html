@@ -20,17 +20,18 @@
                   <input type="text" autocomplete="off" [formControl]="object" />
                 </div>
               </div>
-      
+
               <div class="droite">
                 <div class="groupe">
                   <div class="label">
+                    <i class="fas fa-envelope"></i>
                     <label>Message</label>
                   </div>
                   <textarea placeholder="Saisissez ici..."  [formControl]="message" ></textarea>
                 </div>
               </div>
             </div>
-      
+
             <div class="pied-formulaire" align="center">
               <button (click)="onSubmit()">Envoyer le message</button>
             </div>
@@ -43,7 +44,7 @@
           </a>
         </div>
 
-    </div>    
+    </div>
   </div>
   <footerBar></footerBar>
 </div>
